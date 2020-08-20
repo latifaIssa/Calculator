@@ -1,0 +1,169 @@
+/* ==========================================
+                      STYLE NOTES
+
+ Inspiration from https://dribbble.com/shots/2071807-Accounting-Calculator
+
+ =============================================== */
+
+
+/*-------------------
+    FONT STYLE
+------------------------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+/*----------------------------
+         BODY STYLE
+---------------------------- */
+
+body {
+    background: #FFFFFF;
+    background: linear-gradient(#CA4293, #5B396D);
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    /* overflow-y: hidden; */
+}
+
+html {
+    height: 100%;
+}
+
+
+/*------------------------
+      HEADER
+-------------------------- */
+
+.header {
+    text-align: center;
+    background-color: #E99681;
+    padding: 10px 0 10px;
+    text-align: center;
+    color: #fff;
+    border-bottom: 15px solid #E28588;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+
+/* ------------------------
+   MAIN CALC CONTAINER
+ -------------------------- */
+
+#calculator {
+    width: 35%;
+    height: auto;
+    margin-top: 30px;
+    /* padding: 5px; */
+    border-radius: 10px;
+    background-color: #E0D9EC;
+    padding-top: 15px;
+}
+
+
+/* ------------------------
+   DISPLAY, CLEAR & DEL BUTTONS -------------------------- */
+
+.display {
+    border: #FFFFFF solid 2px;
+    width: 80%;
+    height: 50px;
+    padding-top: 5px;
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+}
+
+#clear {
+    border-radius: 0;
+    background-color: #F7C86E;
+    height: 38px;
+    float: right;
+    margin-right: 20px;
+}
+
+#backspace {
+    border-radius: 0;
+    background-color: #F7C86E;
+    height: 38px;
+    float: right;
+    margin-right: 80px;
+}
+
+.clearBackspace {
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+/* ------------------------
+   NUMBERS ROW
+ -------------------------- */
+
+#numbers-row {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+/* ------------------------
+    BUTTON STYLES
+ -------------------------- */
+
+button {
+    margin: 8px;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: #ffffff;
+}
+
+button:hover {
+    background-color: #F394B2;
+    color: #FFFFFF;
+}
+
+.opp {
+    background-color: #F394B2;
+}
+
+.decimal:hover {
+    background-color: #FFFFFF;
+    color: #888888;
+}
+
+.operator:hover {
+    background-color: #FFFFFF;
+    color: #888888;
+}
+
+.eval:hover {
+    background-color: #FFFFFF;
+    color: #888888;
+}
+
+@media screen and (max-width: 600px) {
+    #calculator {
+        width: 80%;
+    }
+    button {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 601px) {
+    #calculator {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 801px) {
+    #calculator {
+        width: 50%;
+    }
+}
